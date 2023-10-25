@@ -454,4 +454,7 @@ nav .fa-solid{
     .about-col-2 p{
         margin-top: 15px;
     }
+    .contact-left p{
+        font-size: 13.5px;
+    }
 }
