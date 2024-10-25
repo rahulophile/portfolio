@@ -269,7 +269,6 @@ nav {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 10px;
     transition: height 0.5s;
 }
 
@@ -277,7 +276,9 @@ nav {
     font-weight: 500;
     margin-bottom: 20px;
 }
-
+.layer p{
+    font-size: 10px;
+}
 .layer a{
     margin-top: 20px;
     color: #FFD700;
