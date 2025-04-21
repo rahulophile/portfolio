@@ -1,5 +1,6 @@
 /* ------------------------- Style ® Code by Dennis -------------------------------------------------- */
 
+
 main {
     box-sizing: border-box;
     overflow: hidden;
@@ -191,6 +192,9 @@ main.touch .main-wrap {
     .loading-container .dot {
         top: 42%;
     }
+    #recent-works-mob{
+        padding-left: 20px;
+    } 
 }
 
 /* ------------------------- Top Bar -------------------------------------------------- */
@@ -374,6 +378,7 @@ main.touch .main-wrap {
         font-size: 3em;
         line-height: 1.25;
     }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -866,6 +871,7 @@ main.touch .main-wrap {
 }
 
 @media screen and (max-width: 720px) {
+    
     .home-header {
         min-height: 110vh;
         min-height: calc(var(--vh, 1vh) * 110);
@@ -981,6 +987,22 @@ main.touch .main-wrap {
 
 /* ------------------------- Work Grid -------------------------------------------------- */
 
+#recent-works-mob{
+    font-family: 'Dennis Sans', sans-serif;
+                    font-weight: 450;
+                    font-style: normal;
+                    font-size: .6em;
+                    line-height: 1.065;
+                    margin-bottom: 1em;
+                    text-transform: uppercase;
+                    letter-spacing: .05em;
+                    opacity: .5;
+}
+@media screen and (min-width: 541px) {
+    #recent-works-mob{
+        padding-left: 70px;
+    }
+}
 .work-grid .row {
     align-items: center;
     color: unset;
@@ -1218,6 +1240,7 @@ main.touch .main-wrap {
 }
 
 @media screen and (max-width: 450px) {
+       
     .tiny-work-grid .row {
         align-items: flex-start;
         padding: 1.9em 0 1.9em 0;
