@@ -3556,3 +3556,71 @@ main.touch .case-intro-image .btn-wrap {
 .block-button .row .flex-col:last-child {
     margin-right: 0;
 }
+
+/* styles for skills section */
+.skills-section {
+    background-color: var(--color-white); /* Or choose a background */
+    padding-top: calc(var(--section-padding) * 0.8);
+    padding-bottom: calc(var(--section-padding) * 0.8);
+}
+
+.skills-section .container.medium {
+    /* Adjust padding if needed, inheriting from styleguide */
+}
+
+.skills-section h4 {
+    margin-bottom: calc(var(--section-padding) * 0.3); /* Space below title */
+}
+
+.skills-list {
+    justify-content: space-between; /* Distribute categories */
+}
+
+.skill-category {
+    width: 30%; /* Adjust width for 3 columns, minding gaps */
+    padding: 0 1em; /* Add some spacing between columns */
+}
+
+.skill-category h5 {
+    margin-top: 1.5em; /* Space above skill list */
+    margin-bottom: 1em;
+    opacity: 0.7; /* Slightly more visible than default h5 */
+    font-size: 0.7em; /* Adjust size if needed */
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    margin-bottom: 0.5em; /* Space between skills */
+}
+
+.skill-category ul li p {
+    margin-bottom: 0; /* Override default p margin */
+    font-size: 1em; /* Adjust skill text size */
+    line-height: 1.5;
+}
+
+.skill-category .stripe {
+    margin-bottom: 1em; /* Space below stripe */
+    background-color: var(--color-border);
+}
+
+
+/* Responsive adjustments for skills */
+@media screen and (max-width: 720px) {
+    .skill-category {
+        width: 100%; /* Stack columns on mobile */
+        margin-bottom: calc(var(--section-padding) * 0.3); /* Space between categories */
+        padding: 0;
+    }
+    .skill-category:last-child {
+        margin-bottom: 0;
+    }
+    .skills-section h4 {
+        margin-bottom: calc(var(--section-padding) * 0.2);
+    }
+}
