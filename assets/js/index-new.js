@@ -577,9 +577,6 @@ function initCheckTouchDevice() {
  * Hamburger Nav Open/Close
  */
 function initHamburgerNav() {
-
-    // Open/close navigation when clicked .btn-hamburger
-
     $(document).ready(function() {
         $(".btn-hamburger, .btn-menu").click(function() {
             if ($(".btn-hamburger, .btn-menu").hasClass('active')) {
@@ -592,12 +589,44 @@ function initHamburgerNav() {
                 scroll.stop();
             }
         });
+
+        // Handle all anchor link clicks (both in fixed nav and nav-bar)
+        $('.fixed-nav .links-wrap a, .nav-bar .links-wrap a').click(function(e) {
+            const href = $(this).attr('href');
+            
+            // Only handle internal anchor links
+            if (href && href.startsWith('#') && href.length > 1) {
+                e.preventDefault();
+                
+                // Close the navigation menu if open
+                $(".btn-hamburger, .btn-menu").removeClass('active');
+                $("main").removeClass('nav-active');
+                scroll.start();
+                
+                // Scroll to the target section using locomotive scroll
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    // Small delay to ensure menu closes smoothly
+                    setTimeout(() => {
+                        scroll.scrollTo(targetElement, {
+                            offset: 0,
+                            duration: 1000,
+                            easing: [0.25, 0.0, 0.35, 1.0]
+                        });
+                    }, 300);
+                }
+            }
+        });
+
         $('.fixed-nav-back').click(function() {
             $(".btn-hamburger, .btn-menu").removeClass('active');
             $("main").removeClass('nav-active');
             scroll.start();
         });
     });
+
     $(document).keydown(function(e) {
         if (e.keyCode == 27) {
             if ($('main').hasClass('nav-active')) {
@@ -607,7 +636,6 @@ function initHamburgerNav() {
             }
         }
     });
-
 }
 
 /**
