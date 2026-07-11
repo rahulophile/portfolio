@@ -1,1 +1,5 @@
-http://rahulophile.me/*    https://rahulophile.me/:splat   301!
+http://rahulophile.in/*    https://rahulophile.in/:splat   301!
+http://www.rahulophile.in/*    https://rahulophile.in/:splat   301!
+https://www.rahulophile.in/*   https://rahulophile.in/:splat   301!
+http://rahulophile.me/*    https://rahulophile.in/:splat   301!
+https://rahulophile.me/*   https://rahulophile.in/:splat   301!
