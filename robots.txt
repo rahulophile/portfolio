@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
+Allow: /assets/img/
+Allow: /media/
+
+Disallow: /.git/
+
 Sitemap: https://rahulophile.in/sitemap.xml
+
+# Rahulophile - Full Stack MERN Developer Portfolio
+# https://rahulophile.in

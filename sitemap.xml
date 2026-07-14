@@ -1,18 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://rahulophile.in/</loc>
-    <lastmod>2025-04-23</lastmod>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rahulophile.in/assets/img/DP.webp</image:loc>
+      <image:caption>Rahul Raj (Rahulophile) - Full Stack MERN Developer and Data Science Enthusiast</image:caption>
+      <image:title>Rahul Raj Profile Photo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rahulophile.in/assets/img/BG.webp</image:loc>
+      <image:caption>Rahul Raj (Rahulophile) - Portfolio Banner - Full Stack MERN Developer based in India</image:caption>
+      <image:title>Rahulophile Portfolio Banner</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rahulophile.in/#home</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rahulophile.in/#work</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rahulophile.in/media/workShowcase/hostelgate.webp</image:loc>
+      <image:caption>HostelGate - Smart Hostel Management System by Rahul Raj</image:caption>
+      <image:title>HostelGate Mobile App</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rahulophile.in/media/workShowcase/vision.webp</image:loc>
+      <image:caption>VisionGECV - College Technical Fest Website by Rahul Raj</image:caption>
+      <image:title>VisionGECV Website</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rahulophile.in/media/workShowcase/engineersadda.webp</image:loc>
+      <image:caption>EngineersAdda - E-Commerce Website by Rahul Raj</image:caption>
+      <image:title>EngineersAdda E-Commerce</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rahulophile.in/media/workShowcase/extravaganza.webp</image:loc>
+      <image:caption>Extravaganza - College Cultural Fest Website by Rahul Raj</image:caption>
+      <image:title>Extravaganza Website</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rahulophile.in/#about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rahulophile.in/#about</loc>
-  </url>
-  <url>
-    <loc>https://rahulophile.in/#works</loc>
-  </url>
-  <url>
     <loc>https://rahulophile.in/#contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
